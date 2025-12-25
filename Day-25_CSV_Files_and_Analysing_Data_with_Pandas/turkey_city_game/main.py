@@ -17,10 +17,7 @@ while len(guessed_cities) < 81:
     answer_city = screen.textinput(title=f"{len(guessed_cities)}/81 City Correct", prompt="What's another city's name?").title()
 
     if answer_city == "Exit":
-        missing_cities = []
-        for city in all_city:
-            if city not in guessed_cities:
-                missing_cities.append(city)
+        missing_cities = [city for city in all_city if city not in guessed_cities]
         new_data = pandas.DataFrame(missing_cities)
         new_data.to_csv("cities_to_learn.csv")
         break
