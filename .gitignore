@@ -3,3 +3,4 @@ __pycache__/
 *.pyc
 .env
 .DS_Store
+Day-29-30_Password_Manager/data.json
