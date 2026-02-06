@@ -1,0 +1,20 @@
+.red-text{
+    color: red;
+}
+
+.white-text{
+    color: white;
+}
+
+.blue-text{
+    color: blue;
+}
+
+/* ID sadece tek bir elemente uygulanabilir ve uniq olmalıdır */
+#main{
+    color:blue;
+}
+
+/* *{
+    color: red;
+} * ile tüm elementleri dahil ederek style verebiliriz*/
